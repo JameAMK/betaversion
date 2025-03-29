@@ -24,8 +24,8 @@ const Navbar = () => {
   return (
     <>
       {/* Desktop Navbar */}
-      <div className="sticky top-0 px-15 xl:px-0 cusContainer  z-50">
-        <div className="bg-red h-20 w-full mx-200 mt-5 justify-between  shadow-md hidden lg:flex xl:p-4 p-2 ">
+      <div className="sticky top-0 px-15 mx-auto xl:px-0 cusContainer  z-50">
+        <div className="bg-red h-20 w-full mx-auto mt-5 justify-between  shadow-md hidden lg:flex xl:p-4 p-2 ">
           <div className="text-white flex xl:text-lg lg:text-xs ">
             {pages
               .filter((page) => page.name !== "Get in Touch")
@@ -53,7 +53,7 @@ const Navbar = () => {
                       }
                       whileHover={{ color: "red" }}
                       transition={{ duration: 0.2, ease: "easeInOut" }}
-                      className={`cursor-pointer font-bold px-3 py-2 duration-200 nav relative flex items-center gap-2  `}
+                      className={`cursor-pointer font-regular px-3 py-2 duration-200 nav relative flex items-center gap-2  `}
                       onClick={(e) => {
                         if (page.name === "Service") {
                           e.preventDefault();
@@ -80,7 +80,7 @@ const Navbar = () => {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
                         transition={{ duration: 0.3, ease: "easeInOut" }}
-                        className="absolute xl:left-4 md:left-0 top-12 z-50 lg:w-[500px] md:w-[300px] py-4 bg-white text-black shadow-lg rounded-md font-bold px-2 dropDown ">
+                        className="absolute xl:left-4 md:left-0 top-12 z-50 lg:w-[500px] md:w-[300px] py-4 bg-white text-black shadow-lg rounded-md font-regular px-2 dropDown ">
                         <Link
                           to="/outsourceservice"
                           className="block px-4 py-4 ">
